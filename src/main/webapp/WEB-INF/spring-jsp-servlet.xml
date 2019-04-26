@@ -4,5 +4,11 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<bean id="loginController" class="com.webapp.controllers.LoginController"></bean>
+	
+	<bean id="signupController" class="com.webapp.controllers.SignupController"></bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp" />
+    </bean>
 
 </beans>
